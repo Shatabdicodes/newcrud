@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 const defaultUsers = [
-  { id: 1, name: "Raj Sharma", email: "raj@gmail.com", password: "123456", age: 20, gender: "Male", terms: true },
-  { id: 2, name: "Kasturi Sen", email: "kas@gmail.com", password: "123456", age: 21, gender: "Female", terms: false },
-  { id: 3, name: "Sayantani Dey", email: "sayantani@gmail.com", password: "123456", age: 22, gender: "Female", terms: true },
+  { id: 1, name: "Raj Verma", email: "raj@gmail.com", password: "123456", age: 20, gender: "Male", terms: true },
+  { id: 2, name: "Aparna Sen", email: "aparna@gmail.com", password: "123456", age: 21, gender: "Female", terms: false },
+  { id: 3, name: "Soma Dey", email: "soma@gmail.com", password: "123456", age: 22, gender: "Female", terms: true },
 ];
 
 function getColor(name) {
-  const c = { "Raj Sharma": "#6c63ff", "Kasturi Sen": "#4f8ef7", "Sayantani Dey": "#5b8dee" };
+  const c = { "Raj Verma": "#6c63ff", "Aparna Sen": "#4f8ef7", "Soma Dey": "#5b8dee" };
   const fallback = ["#6c63ff","#4f8ef7","#5b8dee","#06b6d4","#10b981","#f59e0b","#ef4444","#ec4899"];
   return c[name] || fallback[name.charCodeAt(0) % fallback.length];
 }
